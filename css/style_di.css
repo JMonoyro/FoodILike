@@ -57,6 +57,8 @@
     font-family: 'montserratbold';
     font-size: 46px;
     line-height: 121.9%;
+    color: #2F2F2F;
+    margin: 0;
 }
 .popular-p-dishes {
     width: 450px;
@@ -66,7 +68,7 @@
 .popular-btn {
     cursor: pointer;
     font-family: 'montserratsemibold';
-    margin-top: 23px;
+    margin-top: 16px;
     width: 208px;
     height: 48px;
     font-size: 16px;
