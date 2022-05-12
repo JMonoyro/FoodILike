@@ -1,0 +1,519 @@
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+html{
+    box-sizing: border-box;
+    height: 100%;
+    background-color: #FBF8F8;
+    font-family: "montserratregular", "Arial", sans-serif;
+    line-height: 121.9%;
+}
+a{
+    text-decoration: none;
+    color: #2F2F2F;
+}
+body{
+    font-size: 14px;
+    font-weight: 400;
+    color: #181818;
+
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+}
+main{
+    flex-grow: 1;
+}
+.section{
+    width: 100%;
+}
+.container{
+    max-width: 1200px;
+    min-width: 320px;
+    margin: 0 auto;
+    
+}
+.logo{
+    display: flex;
+    flex-direction: row;
+    width: 227px;
+}
+.logo_img{
+    height: 50px;
+}
+.logo_text{
+    font-size: 34px;
+    text-transform: uppercase;
+    line-height: normal;
+    color: #82BC00;
+    display: flex;
+    flex-direction: column;
+    padding-top: 10px;
+}
+.logo_text b{
+    font-family: "montserratextrabold";
+    color: #82BC00;
+}
+.logo_text img{
+    padding-bottom: 1px;
+}
+.mini_i{
+    text-transform: none;
+    color: #EE7700;
+}
+.orange_text{
+    color: #EE7700;
+}
+.mini_text{
+    font-size: 8px;
+    color: #3E4543;
+}
+
+.top_menu_wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 20px;
+} 
+.section.header_menu {
+    min-height: 206px;
+    position: fixed;
+    width: 100%;
+    background:url(../img/bgHeaderMenu.png);
+    z-index: 10;
+    
+}
+header ul{
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-between;
+    width: 619px;
+}
+.mainmenu_list{
+    padding-left: 0;
+    padding-top: 10px;
+    flex-shrink: 0;
+}
+.mainmenu_list li{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mainmenu_list span{
+    width: 66px;
+    height: 3px;
+    background: none;
+    margin-top: 5px;
+    transition: 1s all;
+}
+.mainmenu_list li:hover{
+    font-family: "montserratsemibold";
+
+}
+.mainmenu_list li:hover span{
+    background-color: #EE7700;
+}
+.mainmenu_item a{
+    color: #181818;
+}
+
+.number{
+    line-height: 18px;
+    text-align: end;
+    font-size: 16px;
+    padding-top: 14px;
+    min-width: 180px;
+    font-family: "montserratbold";
+}
+.number b img{
+    padding-bottom: 3px;
+    padding-left: 5px;
+}
+.phone{
+    font-size: 12px;
+    margin-right: 16px;
+    border-bottom: dashed 1px;
+    width: 102px;
+    text-align: center;
+    font-family: "montserratregular";
+}
+
+
+.banner{
+    padding-top: 180px;
+    min-height: 500px;
+    background: url(../img/bgHeader.png);
+    background-repeat: no-repeat;
+    background-position-x: center; /*right*/
+}
+.banner_wrapper{
+    height: 827px;
+}
+.our_city{
+    font-size: 22px;
+}
+
+.cards{
+    margin-top: 88px;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    width: 790px;
+
+    overflow: hidden;
+}
+.card_item{
+    width: 380px;
+    height: 239px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-shrink: 0;
+}
+.card_button{
+    margin-bottom: 26px;
+    height: 59px;
+    width: 316px;
+    color: #2F2F2F;
+    font-weight: 600;
+    font-size: 16px;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    transition: 0.5s all;
+}
+.card_button:hover{
+    background-color: #EE7700;
+    color: white;
+    font-weight: 600px;
+}
+.card_button:hover .orange_row path{
+    stroke: white;
+}
+.card_button:hover .bunner_logo path{
+    fill: white;
+}
+.card_button .bunner_logo{
+    margin: 6px;
+}
+.card_button .orange_row{
+    margin-left: auto;
+    margin-right: 18px;
+}
+.pizza{
+    margin-left: 30px;
+    background: url(../img/pizza.png);
+    background-position: center;
+}
+.dessert{
+    margin-left: 30px;
+    background: url(../img/dessert.png);
+    background-position: center;
+}
+.flour{
+    margin-left: 30px;
+    background: url(../img/flour.png);
+    background-position: center;
+}
+.hot_dishes{
+    margin-left: 30px;
+    background: url(../img/hotDishes.png);
+    background-position: center;
+}
+.snacks{
+    background: url(../img/snacks.png);
+    background-position: center;
+}
+
+.main_text h1{
+    color: #2F2F2F;
+    font-size: 46px;
+    margin: 0;
+    font-weight: 800;
+    line-height: 110.4%;
+    font-family: "montserratbold";
+    width: 431px;
+}
+.main_text
+{
+    display: flex;
+    flex-direction: column;
+    width: 493px;
+    min-height: 280px;
+    justify-content: space-between;
+    padding-top: 24px;
+}
+.main_text p
+{
+    font-size: 18px;
+    line-height: 149.4%;
+    font-family: "montserratmedium";
+    margin-bottom: 35px;
+}
+.btn_our_menu{
+    color: white;
+    width: 213px;
+    height: 46px;
+    
+    font-size: 16px;
+    font-family: "montserratsemibold";
+
+    border: #EE7700;
+    background: #EE7700;
+    box-shadow: 0px 0px 16px rgba(255, 119, 20, 0.44);
+    border-radius: 0px 24px 24px 24px;
+
+    transition: 1s all;
+}
+.btn_our_menu:hover{
+    background: #E86100;
+    cursor: pointer;
+}
+
+
+
+.main_rows{
+    display: flex;
+    flex-direction: row;
+    width: 790px;
+    justify-content: flex-end;
+    margin-top: 26px;
+    transition: 1s all;
+}
+.main_left{
+    background: #82BC00;
+    border-radius: 22.7836px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    margin-right: 6px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_left:hover{
+    background: #85c005;
+    cursor: pointer;
+}
+.main_left:active{
+    background: rgb(112, 163, 0);
+}
+.main_right{
+    background: #EE7700;
+    border-radius: 22.7836px;
+    width: 46px;
+    height: 46px;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main_right:hover{
+    background: #f87f05;
+    cursor: pointer;
+}
+.main_right:active{
+    background: #E86100;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+/*=-=Что лучше заказать?=-=*/
+.order{
+    height: 684px;
+    background: url(../img/bgOrder.png);
+    background-repeat: no-repeat;
+    background-position-x: center; /*right*/
+    margin-top: 50px;
+}
+.order_wrapper{
+    min-height: 684px;
+    display: flex;
+}
+.order_form{
+    margin-top: 27px;
+    height: 656px;
+    width: 585px;
+
+    background: #F8F8F8;
+    border-radius: 30px 53px 53px 53px;
+    box-shadow: 0px 0px 250px rgba(0, 0, 0, 0.16);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.order_form h2{
+    font-family: 'montserratbold';
+    font-size: 34px;
+    color: #2F2F2F;
+    margin: 0 auto;
+    line-height: 121.9%;
+}
+.order_text{
+    width: 430px;
+    height: 493px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+.order_text p{
+    font-size: 16px;
+    color: #2F2F2F;
+    line-height: 150%;
+}
+p.order_person{
+    font-size: 14px;
+    font-family: "montserratmedium";
+    line-height: 136.9%;
+}
+p.order_person a{
+    /* text-decoration: underline; */
+    border-bottom: 1px solid black;
+    font-family: "montserratsemibold";
+}
+
+.form_item{
+    margin-top: 10px;
+    width: 380px;
+    position: relative;
+}
+.form_label{
+    position: absolute;
+    top: -3px;
+    left: 8px;
+    background: #F8F8F8;
+    line-height: 121.9%;
+    font-family: "montserratsemibold";
+    border-left: 5px solid #F8F8F8;
+    border-right: 5px solid #F8F8F8;
+}
+
+.form_item input{
+    border-radius: 5px;
+    border: 0.1px solid #585858;
+    width: 380px;
+    height: 50px;
+    padding: 0 15px;
+    margin: 6px auto;
+    background: #F8F8F8;
+}
+
+.btn_send{
+    color: white;
+    width: 213px;
+    min-height: 46px;
+    margin-top: 20px;
+    margin-bottom: 14px;
+    
+    font-size: 16px;
+    font-family: "montserratsemibold";
+
+    border: #EE7700;
+    background: #EE7700;
+    border-radius: 0px 24px 24px 24px;
+
+    transition: 1s all;
+}
+.btn_send:hover{
+    background: #E86100;
+    box-shadow: 0px 0px 16px rgba(255, 119, 20, 0.44);
+    cursor: pointer;
+}
+
+/*=-=Как сделать заказ=-=*/
+.howorder_wrapper{
+    height: 397px;
+}
+.howorder{
+    padding-top: 50px;
+}
+.howorder_h1{
+    font-size: 34px;
+    font-family: "montserratbold";
+    margin: 0 auto;
+    margin-bottom: 14px;
+    text-align: center;
+}
+.howorder_cards{
+    line-height: 121.9%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.howorder_item{
+    width: 277px;
+    height: 278px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 0px 33px 33px 33px;
+    margin-top: 38px;
+
+    display: flex;
+    flex-direction: column;
+
+    padding: 38px 28px;
+
+    transition: 0.5s all;
+}
+
+.howorder_item .howorder_icon path{
+    fill: black;
+}
+.howorder_item p{
+    width: 220px;
+    flex-grow: 1;
+    margin: 0;
+    line-height: 155.4%;
+}
+.howorder_more{
+    display: none;
+    width: 120px;
+}
+.howorder_item:hover{
+    width: 277px;
+    height: 318px;
+    background: #EE7700;
+    box-shadow: 0px 0px 33px rgba(0, 0, 0, 0.04);
+    border-radius: 0px 33px 33px 33px;
+    margin-top: 19px;
+    color: white;
+    transition: 0.5s all;
+}
+
+.howorder_item:hover .howorder_more{
+    display: block;
+}
+
+.howorder_item:hover .howorder_icon path{
+    fill: white;
+}
+
+.howorder_name{
+    font-size: 18px;
+    font-family: "montserratmedium";
+    margin: 16px 0;
+}
+
+.howorder_more{
+    color: white;
+    font-size: 16px;
+    font-family: "montserratsemibold";
+}
+.howorder_more:hover{
+    font-family: "montserratbold";
+}
+.howorder_more:hover path{
+    stroke-width: 2;
+}
