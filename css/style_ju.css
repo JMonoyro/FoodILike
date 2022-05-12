@@ -80,7 +80,7 @@ main{
     padding-top: 20px;
 } 
 .section.header_menu {
-    min-height: 206px;
+    min-height: 177px;
     position: fixed;
     width: 100%;
     background:url(../img/bgHeaderMenu.png);
