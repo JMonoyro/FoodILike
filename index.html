@@ -223,7 +223,7 @@
                                 </svg>
                             </button>
                             <button class="popular-btn-slider p-b-s--next">
-                                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="SVG namespace">
+                                <svg width="10" height="15" viewBox="0 0 10 15" fill="none" xmlns="SVG namespace" id="dishes">
                                     <path d="M2 2L7.65685 7.65685L2 13.3137" stroke="white" stroke-width="3" />
                                 </svg>
                             </button>
@@ -233,7 +233,7 @@
             </div>
         </section>
 
-        <section class="section dishes" id="dishes">
+        <section class="section dishes" >
             <div class="container dishes__container">
                 <div class="dishes__menu">
                     <div class="dishes__text-menu">Меню</div>
@@ -305,7 +305,7 @@
                             </svg>                            
                         </button>
                     </div>
-    
+
                     <a href="#dishes">
                         <button class="dishes__textrow">
                             <span class="dish_text">Наше меню</span>
@@ -356,13 +356,13 @@
                                 </button>
                             </div>
                         </form>
-                        <p class="order_person">Нажимая кнопку Вы подтверждаете<br>обработку <a href="#">Персональных данных</a></p>
+                        <p class="order_person" id="howorder">Нажимая кнопку Вы подтверждаете<br>обработку <a href="#">Персональных данных</a></p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="section howorder" id="howorder">
+        <section class="section howorder">
             <div class="howorder_wrapper container">
                 <h1 class="howorder_h1">Как сделать заказ</h1>
                 <div class="howorder_cards">
@@ -372,7 +372,7 @@
                         </svg>                          
                         <div class="howorder_name">Заказ</div>
                         <p>Перейдите в "Меню" и выберите предпочитаемые блюда и затем заполните форму заявки и ожидайте звонка менеджера</p>
-                        <a href="#" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#dishes" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L5.95085 5.94865L1 10.8973" stroke="white" stroke-width="1.5"/>
                             </svg></a>
                     </div>
@@ -386,7 +386,7 @@
                         </svg>                            
                         <div class="howorder_name">Оплата</div>
                         <p>Мы принимаем любой удобный для вас способ оплаты: картой банка, наличными, электронным платежом</p>
-                        <a href="#" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#payment" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L5.95085 5.94865L1 10.8973" stroke="white" stroke-width="1.5"/>
                             </svg></a>
                     </div>
@@ -399,7 +399,7 @@
                         </svg>
                         <div class="howorder_name">Доставка</div>
                         <p>Производится каждый день по Москве с 8:00 до 20:00. Сумма минимального заказа составляет 800 рублей</p>
-                        <a href="#" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <a href="#howorder" class="howorder_more">Подробнее <svg width="8" height="12" viewBox="0 0 8 12" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M1 1L5.95085 5.94865L1 10.8973" stroke="white" stroke-width="1.5"/>
                             </svg></a>
                     </div>
@@ -544,7 +544,7 @@
                                 </svg>    
                                 <p class="footer__find-tel">+7 351 233-06-01</p>
                             </div>
-                            <button class="footer__find-btn">Обратный звонок</button>
+                            <a href="tel:+7 (351) 233-06-01"><button class="footer__find-btn">Обратный звонок</button></a>
                         </div>
                     </div>
     
